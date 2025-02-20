@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Service Worker Registration and Status Checking
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/order/sw.js')
+        navigator.serviceWorker.register('https://socialbuilder.github.io/order.omsosmed.com/js/sw.js')
             .then(function(registration) {
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
                 
