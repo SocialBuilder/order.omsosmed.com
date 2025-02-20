@@ -349,12 +349,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 350px;
 }
 
 .main-illustration {
-    width: 100%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 450px;
     height: auto;
     object-fit: contain;
 }
@@ -378,8 +378,8 @@ body {
 
 .float-element {
     position: absolute;
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     background: white;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -390,7 +390,7 @@ body {
 }
 
 .float-element i {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 /* Social Media Colors */
@@ -404,17 +404,17 @@ body {
 .youtube i { color: #FF0000; }
 .tiktok i { 
     color: #000000;
-    font-size: 22px; /* Slightly smaller for better proportion */
+    font-size: 28px; /* Slightly smaller for better proportion */
 }
 .facebook i { color: #1877F2; }
 .twitter i { color: #1DA1F2; }
 
 /* Position elements */
-.instagram { top: 10%; left: 10%; animation-delay: 0s; }
-.youtube { top: 20%; right: 15%; animation-delay: 0.5s; }
-.tiktok { bottom: 30%; left: 15%; animation-delay: 1s; }
-.facebook { bottom: 15%; right: 10%; animation-delay: 1.5s; }
-.twitter { top: 50%; right: 25%; animation-delay: 2s; }
+.instagram { top: 12%; left: 12%; }
+.youtube { top: 22%; right: 18%; }
+.tiktok { bottom: 22%; left: 18%; }
+.facebook { bottom: 18%; right: 12%; }
+.twitter { top: 42%; right: 22%; }
 
 @keyframes float {
     0% { transform: translateY(0) rotate(0deg); }
@@ -450,8 +450,25 @@ body {
     }
 
     .hero-image {
-        max-width: 500px;
-        margin: 0 auto;
+        min-height: 300px;
+    }
+
+    .main-illustration {
+        width: 70%;
+        max-width: 400px;
+    }
+
+    .float-element {
+        width: 45px;
+        height: 45px;
+    }
+
+    .float-element i {
+        font-size: 24px;
+    }
+
+    .tiktok i {
+        font-size: 26px;
     }
 }
 
@@ -475,6 +492,28 @@ body {
     .hero-btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .hero-image {
+        min-height: 250px;
+    }
+
+    .main-illustration {
+        width: 60%;
+        max-width: 350px;
+    }
+
+    .float-element {
+        width: 42px;
+        height: 42px;
+    }
+
+    .float-element i {
+        font-size: 22px;
+    }
+
+    .tiktok i {
+        font-size: 24px;
     }
 }
 
@@ -501,12 +540,12 @@ body {
     }
 
     .float-element {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
     }
 
     .float-element i {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 
@@ -601,12 +640,12 @@ body {
     }
 
     .float-element {
-        width: 36px;
-        height: 36px;
+        width: 38px;
+        height: 38px;
     }
 
     .float-element i {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .hero-image {
@@ -1654,10 +1693,13 @@ blockquote {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 500px;
 }
 
 .support-illustration {
-    max-width: 100%;
+    width: 80%;
+    max-width: 400px;
     height: auto;
     animation: float 6s ease-in-out infinite;
 }
@@ -1715,10 +1757,36 @@ blockquote {
     .satisfaction-content {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
+    }
+
+    .satisfaction-image {
+        max-width: 100%;
+    }
+
+    .support-illustration {
+        width: 70%;
+        max-width: 350px;
     }
 
     .satisfaction-stats {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .satisfaction-section {
+        padding: 60px 0;
+    }
+
+    .satisfaction-content {
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .support-illustration {
+        width: 60%;
+        max-width: 300px;
     }
 }
 
@@ -1729,6 +1797,11 @@ blockquote {
 
     .satisfaction-title {
         font-size: 2rem;
+    }
+
+    .support-illustration {
+        width: 50%;
+        max-width: 250px;
     }
 }
 
