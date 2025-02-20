@@ -1,8 +1,7 @@
 const CACHE_NAME = 'omsosmed-cache-v1';
 const urlsToCache = [
-    '/order/',
-    '/order/styles.css',
-    '/order/script.js',
+    'https://socialbuilder.github.io/order.omsosmed.com/css/styles.css',
+    'https://socialbuilder.github.io/order.omsosmed.com/js/script.js',
     'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
 ];
