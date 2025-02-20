@@ -1,12 +1,12 @@
 const CACHE_NAME = 'omsosmed-cache-v1';
 const urlsToCache = [
     '/',
-    '/styles.css',
-    '/script.js',
-    '/image/logo-om-sosmed.png',
-    '/image/Om-Sosmed-Platform-Illustration.webp',
-    '/image/Om-Sosmed-Platform-Illustration-small.webp',
-    '/image/Layanan-Pelanggan-Om-Sosmed.webp',
+    'https://socialbuilder.github.io/order.omsosmed.com/css/styles.css',
+    'https://socialbuilder.github.io/order.omsosmed.com/js/script.js',
+    'https://socialbuilder.github.io/order.omsosmed.com/image/logo-om-sosmed.png',
+    'https://socialbuilder.github.io/order.omsosmed.com/image/Om-Sosmed-Platform-Illustration.webp',
+    'image/Om-Sosmed-Platform-Illustration-small.webp',
+    'https://socialbuilder.github.io/order.omsosmed.com/image/Layanan-Pelanggan-Om-Sosmed.webp',
     '/image/Layanan-Pelanggan-Om-Sosmed-small.webp',
     'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
